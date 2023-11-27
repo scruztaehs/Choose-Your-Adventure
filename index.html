@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Choose Your Adventure</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="story">
+            <p id="intro">Welcome to the Adventure! Click to start.</p>
+            <button id="startBtn">Start</button>
+
+            <div id="scene1" class="hidden">
+                <img src="https://www.gamespot.com/a/uploads/screen_kubrick/1552/15524586/3210291-2017032216072735.jpg" alt="Dark Forest">
+                <p>You find yourself in a dark forest. Enter if you dare...</p>
+                <button id="choice1">Go deeper into the forest</button>
+                <button id="choice2">Turn back</button>
+
+            </div>
+
+            <div id="scene2" class="hidden">
+                <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsX29mZmljZV8zNF9zY2VuZV9vZl8zZF9pbGx1c3RyYXRpb25fYV9tb3VudGFpbl9jYXZlX25hdF80YWViNjMwYS1iMTI3LTRlMTgtYTJlOC05MDY5Y2YzMmU3Y2VfMS5qcGc.jpg" alt="Hidden Cave">
+                <p>You discover a hidden cave. Will you enter?</p>
+                <button id="choice3">Enter the cave</button>
+                <button id="choice4">No! It's too scary!</button>
+
+            </div>
+
+            <div id="scene3" class="hidden">
+                <div class="chest"><img src="https://static.vecteezy.com/system/resources/thumbnails/028/320/676/small_2x/pirates-treasure-chest-in-cave-generative-ai-photo.jpeg" alt="Treasure Chest"></div>
+                <p>You discover a treasure chest inside the cave!</p>
+                <button id="choice5">Double click on the chest to open</button>
+
+            </div>
+
+            <div id="scene4" class="hidden">
+                <div class="dragon"><img src="https://img.freepik.com/premium-photo/dragon-cave-with-fire-center_902049-7329.jpg" alt="Dragon"></div>
+                <div class="dragon_text">
+                    <p>How dare you enter my cave! I must now kill you!</p>
+                </div>
+                <p>Oh no! It's a dragon! Hover over the dragon to see what he says.</p>
+                <button id="choice7">Fight the dragon</button>
+                <button id="choice8">Run away from the dragon</button>
+            </div>
+
+            <div id="scene6" class="hidden">
+                <p>Look! There are magical swords around. They can help ypu defeat the dragon. Double-click to collect them.</p>
+
+                <img class="sword" src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/24252/sword-clipart-xl.png" alt="Sword 1">
+                <img class="sword" src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/24252/sword-clipart-xl.png" alt="Sword 2">
+                <img class="sword" src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/24252/sword-clipart-xl.png" alt="Sword 3">
+            </div>
+
+
+            <div id="scene7" class="hidden">
+                <img src="https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac2bcd83e-5c69-461c-95dd-4d55ebab6feb?source=next-article&fit=scale-down&quality=highest&width=1440&dpr=1" alt="Meadow">
+                <p>Congratulations! You managed to kill the dragon and escape.</p>
+                <p>The end. Thanks for playing!</p>
+                <button class="restartBtn">Restart</button>
+            </div>
+
+            <div id="scaredyCatEnd" class="hidden">
+                <p>Scaredy cat! :( The End</p>
+                <button class="restartBtn">Restart</button>
+            </div>
+
+            <div id="withoutEnteringCaveEnd" class="hidden">
+                <p>You decide to continue your journey without entering the cave.</p>
+                <button class="restartBtn">Restart</button>
+            </div>
+            <div id="sceneRunAway" class="hidden">
+                <p>You fall down and get eaten by the dragon.</p>
+                <button class="restartBtn">Restart</button>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>

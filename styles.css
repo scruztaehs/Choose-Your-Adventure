@@ -1,0 +1,71 @@
+body {
+    background-image: url('https://i.pinimg.com/736x/29/9b/dd/299bddd0bbcbf12ef749c77596ae58f6.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+#story {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+#story img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #408038;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #123b17;
+}
+
+.dragon_text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: black;
+}
+
+#scene6 {
+    text-align: center;
+}
+
+.sword {
+    width: 70px;
+    margin: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.sword.collected {
+    opacity: 0.3;
+}
